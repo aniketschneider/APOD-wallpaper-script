@@ -38,15 +38,15 @@ INDEX_PAGE="astropix.html"
 
 
 
-if test ! -d "$HOME/apod/" ; then
-	mkdir $HOME/apod/
+if test ! -d "$HOME/.apod/" ; then
+	mkdir $HOME/.apod/
 	if test $? -ne 0 ; then
-		echo "Couldn't create directory $HOME/apod/" >&2
+		echo "Couldn't create directory $HOME/.apod/" >&2
 		exit 1
 	fi
 fi
 
-cd $HOME/apod/
+cd $HOME/.apod/
 rm $INDEX_PAGE
 wget $BASE_URL$INDEX_PAGE
 
@@ -85,10 +85,10 @@ if test $? -ne 0 ; then
 fi
 
 #gconftool -t string -s /desktop/gnome/background/picture_filename \
-#	$HOME/apod/$FILENAME
+#	$HOME/.apod/$FILENAME
 
 gsettings set org.gnome.desktop.background picture-uri \
-	file://"$HOME/apod/$FILENAME"
+	file://"$HOME/.apod/$FILENAME"
 
 
 if test $? -ne 0 ; then

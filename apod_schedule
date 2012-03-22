@@ -1,1 +1,2 @@
-* * * * * apod_wallpaper.sh 2>>$HOME/apod/log
+# Run apod script every hour with logging
+27 * * * * apod_wallpaper.sh 2>$HOME/.apod/log

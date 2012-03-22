@@ -1,7 +1,10 @@
 A simple shell script to pull the NASA astronomy picture of the day, save it,
 and set it as the GNOME desktop background.
 
-To install, put apod_wallpaper.sh somewhere in your $PATH, and add the crontab
+To install, link apod_wallpaper.sh somewhere in your $PATH, and add the crontab
 entry in apod_schedule.
 
 Tested with Ubuntu release 11.10 with GNOME 3.2.1
+
+TODO: write install script
+TODO: option to clean up old images
