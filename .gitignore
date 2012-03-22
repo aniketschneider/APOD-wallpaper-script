@@ -1,0 +1,7 @@
+# Don't commit logs or images
+log
+*.jpeg
+*.jpg
+*.gif
+*.bmp
+*.png
